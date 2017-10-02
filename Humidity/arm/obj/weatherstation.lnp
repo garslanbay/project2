@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+".\obj\system_efm32zg.o"
+".\obj\startup_efm32zg_1.o"
+".\obj\udelay.o"
+".\obj\si7013.o"
+".\obj\i2cspm.o"
+".\obj\si7021.o"
+".\obj\lcd.o"
+".\obj\em_adc.o"
+".\obj\em_assert.o"
+".\obj\em_cmu.o"
+".\obj\em_core.o"
+".\obj\em_emu.o"
+".\obj\em_gpio.o"
+".\obj\em_leuart.o"
+".\obj\em_rtc.o"
+".\obj\em_usart.o"
+".\obj\em_i2c.o"
+".\obj\nrf24l01.o"
+".\obj\em_dma.o"
+".\obj\em_rmu.o"
+".\obj\weatherstation.o"
+--library_type=microlib --strict --scatter ".\obj\weatherstation.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lst\weatherstation.map" -o .\obj\weatherstation.axf
